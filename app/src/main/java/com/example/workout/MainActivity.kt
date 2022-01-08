@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,35 +12,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //animation code:
-        val ttb = AnimationUtils.loadAnimation(this , R.anim.ttb)
-        val stb = AnimationUtils.loadAnimation(this , R.anim.stb)
-        val btt = AnimationUtils.loadAnimation(this , R.anim.btt)
-        textView.startAnimation(ttb)
-        textView2.startAnimation(ttb)
-        llStart.startAnimation(stb)
-        llBMI.startAnimation(stb)
-        llAlarms.startAnimation(stb)
-        llHistory.startAnimation(stb)
+        val firstFragment=AlarmFragment()
+        val secondFragment=WorkoutFragment()
+        val thirdFragment=BmiFragment()
 
-        llStart.setOnClickListener{
-            val intent = Intent(this , ExerciseActivity::class.java) // :: is the java extension symbol , to retrieve the java class of an object  , we use it..
-            startActivity(intent)
-        }
+        setCurrentFragment(firstFragment)
 
-        llBMI.setOnClickListener {
-            val intent = Intent(this , BMIActivity::class.java)
-            startActivity(intent)
-        }
-        llHistory.setOnClickListener {
-            val intent = Intent(this,HistoryActivity::class.java)
-            startActivity(intent)
-        }
-        llAlarms.setOnClickListener {
-            val intent = Intent(this , AlarmMainActivity::class.java)
-            startActivity(intent)
+        bottom_navigation.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.nav_alarm->setCurrentFragment(firstFragment)
+                R.id.nav_workout->setCurrentFragment(secondFragment)
+                R.id.nav_bmi->setCurrentFragment(thirdFragment)
+
+            }
+            true
         }
 
     }
+    private fun setCurrentFragment(fragment: Fragment)=
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragment_container,fragment)
+            commit()
+        }
 
 }

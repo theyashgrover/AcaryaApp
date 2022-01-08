@@ -5,4 +5,6 @@
     <string name="finish">..Finish and go back to starting..</string>
     <string name="date_and_time_of_your_past_workout">Date and Time of your past workouts :</string>
     <string name="your_selected_time_appears_here">Your Selected Time Appears here</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
