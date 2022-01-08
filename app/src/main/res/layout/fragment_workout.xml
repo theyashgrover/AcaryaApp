@@ -1,97 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/plainbg4"
-    tools:context=".WorkoutFragment"
-    >
+    android:background="@color/dark_purple_background"
+    tools:context=".WorkoutFragment">
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Acarya"
         android:fontFamily="cursive"
+        android:text="Acarya"
         android:textColor="@color/white"
-        android:textSize="65sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="85sp"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="6dp"
-        android:text="An app made for changing your lifestyle"
-        app:layout_constraintBottom_toTopOf="@+id/llStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/white"
         android:fontFamily="sans-serif-light"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        android:text="An app made for changing your lifestyle"
+        android:textSize="20dp"
+        android:textColor="@color/green_accent" />
 
 
-    <ImageView
-        android:id="@+id/llStart"
-        android:layout_width="370dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginRight="25dp"
-        android:outlineAmbientShadowColor="#212121"
-        android:scaleType="centerCrop"
-        android:src="@drawable/beginworkout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326" />
 
-    <ImageView
-        android:id="@+id/llAlarms"
-        android:layout_width="184dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="24dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/dietalarms"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/llBMI"
-        app:layout_constraintRight_toRightOf="parent" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/llStart"
+                android:layout_below="@id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="25dp"
+                android:elevation="44dp"
+                app:cardBackgroundColor="@color/light_purple"
+                app:cardCornerRadius="12dp"
+                app:cardUseCompatPadding="true">
 
-    <ImageView
-        android:id="@+id/llBMI"
-        android:layout_width="184dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="12dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bmi"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/llStart" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/beginworkout" />
 
-    <ImageView
-        android:id="@+id/llHistory"
-        android:layout_width="180dp"
-        android:layout_height="314dp"
-        android:layout_marginStart="204dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="25dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/historyboiy"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/llStart" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/llAlarms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llStart"
+                app:cardBackgroundColor="@color/light_purple"
+                android:layout_margin="25dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:padding="24dp"
+
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:gravity="center_vertical"
+                        android:text="Set Workout Alarm"
+                        android:minLines="3"
+                        android:textSize="30dp"
+                        android:textColor="@color/grey_subtext"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_bell"/>
+                </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

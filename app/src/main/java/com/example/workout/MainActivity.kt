@@ -12,15 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val firstFragment=AlarmFragment()
+        val firstFragment=HistoryFragment()
         val secondFragment=WorkoutFragment()
         val thirdFragment=BmiFragment()
 
-        setCurrentFragment(firstFragment)
+        setCurrentFragment(secondFragment)
+        bottom_navigation.selectedItemId = R.id.nav_workout
 
         bottom_navigation.setOnItemSelectedListener {
             when(it.itemId){
-                R.id.nav_alarm->setCurrentFragment(firstFragment)
+                R.id.nav_history->setCurrentFragment(firstFragment)
                 R.id.nav_workout->setCurrentFragment(secondFragment)
                 R.id.nav_bmi->setCurrentFragment(thirdFragment)
 

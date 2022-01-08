@@ -29,23 +29,15 @@ class WorkoutFragment : Fragment() {
         binding.textView.startAnimation(ttb)
         binding.textView2.startAnimation(ttb)
         binding.llStart.startAnimation(stb)
-        binding.llBMI.startAnimation(stb)
         binding.llAlarms.startAnimation(stb)
-        binding.llHistory.startAnimation(stb)
 
         binding.llStart.setOnClickListener{
             val intent = Intent(activity , ExerciseActivity::class.java) // :: is the java extension symbol , to retrieve the java class of an object  , we use it..
             startActivity(intent)
         }
 
-        binding.llBMI.setOnClickListener {
-            val intent = Intent(activity , BMIActivity::class.java)
-            startActivity(intent)
-        }
-        binding.llHistory.setOnClickListener {
-            val intent = Intent(activity,HistoryActivity::class.java)
-            startActivity(intent)
-        }
+
+
         binding.llAlarms.setOnClickListener {
             val intent = Intent(activity , AlarmMainActivity::class.java)
             startActivity(intent)

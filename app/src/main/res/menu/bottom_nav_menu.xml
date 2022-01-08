@@ -3,17 +3,17 @@
 
 
     <item
-        android:id="@+id/nav_alarm"
-        android:icon="@drawable/ic_alarm"
-        android:title="Alarm" />
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_history"
+        android:title="History" />
 
     <item
         android:id="@+id/nav_workout"
-        android:icon="@drawable/ic_dumbbell"
+        android:icon="@drawable/ic_dumbbell2"
         android:title="Workout" />
 
     <item
         android:id="@+id/nav_bmi"
-        android:icon="@drawable/ic_bmi"
+        android:icon="@drawable/ic_health"
         android:title="BMI" />
 </menu>
