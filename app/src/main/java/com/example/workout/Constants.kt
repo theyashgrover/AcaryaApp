@@ -7,51 +7,51 @@ class Constants {
             val exerciseList = ArrayList<ExerciseModel>()
 
             val basicsquats = ExerciseModel(1,
-            "Squats",R.drawable.basicsquats,false,false)
+            "Squats",R.drawable.squatt2,false,false)
             exerciseList.add(basicsquats)
 
             val bicepcurls = ExerciseModel(2,
-                "Bicep Curls",R.drawable.bicepcurls,false,false)
+                "Bicep Curls",R.drawable.bicepcurls2,false,false)
             exerciseList.add(bicepcurls)
 
             val chairdips = ExerciseModel(3,
-                "Chair Dips",R.drawable.chairdips,false,false)
+                "Neck Rolls",R.drawable.neckrolls,false,false)
             exerciseList.add(chairdips)
 
             val crunches = ExerciseModel(4,
-                "Crunches",R.drawable.crunches,false,false)
+                "Crunches",R.drawable.crunches2,false,false)
             exerciseList.add(crunches)
 
             val deadbug = ExerciseModel(5,
-                "DeadBug",R.drawable.deadbug,false,false)
+                "Plank Shoulder Taps",R.drawable.plankshouldertaps,false,false)
             exerciseList.add(deadbug)
 
             val glutebridges = ExerciseModel(6,
-                "Glute Bridges",R.drawable.glutebridges,false,false)
+                "Back Stretch",R.drawable.backstretch,false,false)
             exerciseList.add(glutebridges)
 
             val kneelingpushups = ExerciseModel(7,
-                "Kneeling PushUps",R.drawable.kneelingpushups,false,false)
+                "Mountain Climber",R.drawable.mountainclimber,false,false)
             exerciseList.add(kneelingpushups)
 
             val kneelingsideplanks = ExerciseModel(8,
-                "Kneeling Side Planks",R.drawable.kneelingsideplanks,false,false)
+                "Wrist Curls",R.drawable.wristcurls,false,false)
             exerciseList.add(kneelingsideplanks)
 
             val laterallegraises = ExerciseModel(9,
-                "Lateral Leg Raises",R.drawable.laterallegraises,false,false)
+                "Lateral Leg Swings",R.drawable.laterallegswings,false,false)
             exerciseList.add(laterallegraises)
 
             val lowerbackshit = ExerciseModel(10,
-                "Lower Back",R.drawable.lowerbackshit,false,false)
+                "Pilates",R.drawable.pilateshundred,false,false)
             exerciseList.add(lowerbackshit)
 
             val lunges = ExerciseModel(11,
-                "Lunges",R.drawable.lunges,false,false)
+                "Lunge Twist",R.drawable.lungetwist,false,false)
             exerciseList.add(lunges)
 
             val situps = ExerciseModel(12,
-                "SitUps",R.drawable.situps,false,false)
+                "Standing Side Bend",R.drawable.standingsidebend,false,false)
             exerciseList.add(situps)
 
             return exerciseList

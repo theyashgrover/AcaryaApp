@@ -18,11 +18,11 @@ class ExerciseActivity : AppCompatActivity() , TextToSpeech.OnInitListener {
     //for timer that comes before starting the first exercise and after finishing every exercise..
     private var restTimer: CountDownTimer? = null
     private var restProgress = 0
-    private var restTimerDuration : Long = 7
+    private var restTimerDuration : Long = 10
     //for timer that runs while you are doing your exercise and runs for every exercise..
     private var exerciseTimer: CountDownTimer? = null
     private var exerciseProgress = 0
-    private var exerciseTimerDuration: Long = 15 //to prevent hardcoding of time of the exercise timer , Now we can easily alter this later in the application
+    private var exerciseTimerDuration: Long = 45 //to prevent hardcoding of time of the exercise timer , Now we can easily alter this later in the application
 
     //declaring the exercise list we created using ExerciseModel and Constant Classes
     private var exerciseList:ArrayList<ExerciseModel>? = null
@@ -132,7 +132,7 @@ class ExerciseActivity : AppCompatActivity() , TextToSpeech.OnInitListener {
 
 
             try {
-                player = MediaPlayer.create(applicationContext , R.raw.nanii)
+                player = MediaPlayer.create(applicationContext , R.raw.tripleping)
                 player!!.isLooping = false //wont loop the sound over and over again
                 player!!.start()
             }catch(e:Exception){

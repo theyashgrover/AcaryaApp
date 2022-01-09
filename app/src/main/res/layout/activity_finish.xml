@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".FinishActivity"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="@color/dark_purple_background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_finish_activity"
@@ -17,52 +18,33 @@
         android:id="@+id/tvEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="30dp"
         android:text="WORKOUT ENDS HERE"
         android:textColor="#03989e"
         android:textSize="35sp"/>
-
-    <LinearLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/item_circular_color_accent_border"
-        android:gravity="center">
-    
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:contentDescription="@string/image"
-        android:src="@drawable/ic_action_done"/>
-
-    </LinearLayout>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="Congratulations!"
-        android:textColor="#212121"
-        android:textSize="18sp"/>
+        android:layout_marginTop="10dp"
+        android:text="Congratulations , \n You finished exercise for today"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="You have finished the workout!"
-        android:textColor="#212121"
-        android:textSize="18sp"/>
+        android:src="@drawable/wohoo"
+        />
+
 
     <Button
         android:id="@+id/btnFinish"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
         android:layout_marginTop="35dp"
         android:background="#03989e"
-
         android:text="@string/finish"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
 </LinearLayout>

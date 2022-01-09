@@ -6,20 +6,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/drawable_units_tab_text_color_selector.xml" value="0.2203125" />
-        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/drawble_radio_group_tab_background.xml" value="0.2203125" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/ic_action_done.xml" value="0.20555555555555555" />
-        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/ic_bell.xml" value="0.2203125" />
-        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_bmiactivity.xml" value="0.15760869565217392" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_history.xml" value="0.15760869565217392" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/fragment_alarm.xml" value="0.1" />
-        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/fragment_bmi.xml" value="0.2" />
-        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/fragment_history.xml" value="0.15760869565217392" />
-        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/fragment_workout.xml" value="0.22" />
-        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/item_history_row.xml" value="0.25" />
+        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/fragment_workout.xml" value="0.1" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1619047619047619" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/menu/bottom_navigation.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/AcaryaApp/app/src/main/res/layout/activity_exercise.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/AcaryaApp/app/src/main/res/layout/activity_finish.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/AcaryaApp/app/src/main/res/layout/fragment_workout.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/WorkOut/app/src/main/res/drawable/background_for_mainactivity.xml" value="0.25462962962962965" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/WorkOut/app/src/main/res/drawable/ic_skip_previous.xml" value="0.2703125" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/WorkOut/app/src/main/res/drawable/ic_stop.xml" value="0.2703125" />

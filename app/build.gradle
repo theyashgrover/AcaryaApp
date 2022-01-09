@@ -46,6 +46,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
     testImplementation 'junit:junit:4.+'
     debugImplementation 'im.dino:dbinspector:3.4.1@aar'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
