@@ -26,10 +26,10 @@
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="6dp"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="@font/architects_daughter"
         android:text="An app made for changing your lifestyle"
-        android:textSize="20dp"
-        android:textColor="@color/green_accent" />
+        android:textColor="@color/green_accent"
+        android:textSize="20dp" />
 
 
 

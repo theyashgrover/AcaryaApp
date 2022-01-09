@@ -7,41 +7,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/dark_purple_background"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_alarm2"
+        android:layout_marginTop="24dp"/>
 
     <TextView
         android:id="@+id/selectedTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="12dp"
         android:text="@string/your_selected_time_appears_here"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="38sp"/>
+        android:textAllCaps="false"
+        android:textColor="@color/white_background"
+        android:textSize="38sp" />
+
     <Button
         android:id="@+id/selectTimeBtn"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="36dp"
         android:layout_marginHorizontal="26dp"
-        android:text="Selected Time"
-        android:textSize="26dp"/>
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_corners"
+        app:backgroundTint="@color/green_accent"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="Select Time"
+        android:textAllCaps="false"
+        android:textSize="32dp"
+        android:textColor="@color/dark_purple_background"/>
+
     <Button
         android:id="@+id/setAlarmButton"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="36dp"
         android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_corners"
+        app:backgroundTint="@color/green_accent"
+        android:fontFamily="@font/ubuntu_medium"
         android:text="Set Alarm"
-        android:textSize="26dp"/>
+        android:textAllCaps="false"
+        android:textSize="32dp"
+        android:textColor="@color/dark_purple_background"/>
+
     <Button
         android:id="@+id/cancelAlarmButton"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="36dp"
         android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_corners"
+        app:backgroundTint="@color/green_accent"
+        android:fontFamily="@font/ubuntu_medium"
         android:text="Cancel Alarm"
-        android:textSize="26dp"/>
+        android:textAllCaps="false"
+        android:textSize="32dp"
+        android:textColor="@color/dark_purple_background"/>
 
 
 </LinearLayout>

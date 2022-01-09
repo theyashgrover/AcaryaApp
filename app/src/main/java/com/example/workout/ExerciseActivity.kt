@@ -128,48 +128,49 @@ class ExerciseActivity : AppCompatActivity() , TextToSpeech.OnInitListener {
         }.start()
     }
 
-        private fun setupRestView() {
+    private fun setupRestView() {
 
 
-            try {
-                player = MediaPlayer.create(applicationContext , R.raw.tripleping)
-                player!!.isLooping = false //wont loop the sound over and over again
-                player!!.start()
-            }catch(e:Exception){
-                e.printStackTrace()
-            }
-
-
-            llRestView.visibility = View.VISIBLE
-            llExerciseView.visibility = View.GONE
-
-            if (restTimer != null) {
-                restTimer!!.cancel()
-                restProgress = 0
-            }
-
-            tvUpcomingExerciseName.text = exerciseList!![currentExercisePosition+1].getName()
-
-            setRestProgressBar()
-
+        try {
+            player = MediaPlayer.create(applicationContext , R.raw.tripleping)
+            player!!.isLooping = false //wont loop the sound over and over again
+            player!!.start()
+        }catch(e:Exception){
+            e.printStackTrace()
         }
-        private fun setupRestExView() {
 
-            llRestView.visibility = View.GONE
-            llExerciseView.visibility = View.VISIBLE
 
-            if (exerciseTimer != null) {
-                exerciseTimer!!.cancel()
-                exerciseProgress = 0
-            }
+        llRestView.visibility = View.VISIBLE
+        llExerciseView.visibility = View.GONE
 
-            speakOut(exerciseList!![currentExercisePosition].getName())
-
-            setExerciseProgressBar()
-
-            ivImage.setImageResource(exerciseList!![currentExercisePosition].getImage()) //.getImage is a getter that we created , It returns an Image..
-            tvExerciseName.text = exerciseList!![currentExercisePosition].getName()
+        if (restTimer != null) {
+            restTimer!!.cancel()
+            restProgress = 0
         }
+
+        tvUpcomingExerciseName.text = exerciseList!![currentExercisePosition+1].getName()
+
+        setRestProgressBar()
+
+    }
+    private fun setupRestExView() {
+
+        llRestView.visibility = View.GONE
+        llExerciseView.visibility = View.VISIBLE
+
+        if (exerciseTimer != null) {
+            exerciseTimer!!.cancel()
+            exerciseProgress = 0
+        }
+
+        speakOut(exerciseList!![currentExercisePosition].getName())
+
+        setExerciseProgressBar()
+
+
+        ivImage.setImageResource(exerciseList!![currentExercisePosition].getImage()) //.getImage is a getter that we created , It returns an Image..
+        tvExerciseName.text = exerciseList!![currentExercisePosition].getName()
+    }
 
     override fun onInit(status: Int) {
         //to check if we can access text to speech
@@ -189,9 +190,9 @@ class ExerciseActivity : AppCompatActivity() , TextToSpeech.OnInitListener {
 
     //function for setting up recycler view
     fun setupExerciseStatusRecyclerView(){
-            rvExerciseStatus.layoutManager = LinearLayoutManager(this , LinearLayoutManager.HORIZONTAL , false)
-            exerciseAdapter = ExerciseStatusAdapter(exerciseList!! , this)
-            rvExerciseStatus.adapter = exerciseAdapter
+        rvExerciseStatus.layoutManager = LinearLayoutManager(this , LinearLayoutManager.HORIZONTAL , false)
+        exerciseAdapter = ExerciseStatusAdapter(exerciseList!! , this)
+        rvExerciseStatus.adapter = exerciseAdapter
     }
     private fun customDialogForBackButton(){
         val customDialog = Dialog(this)

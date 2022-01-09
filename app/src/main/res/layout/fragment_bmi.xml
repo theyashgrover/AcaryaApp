@@ -65,8 +65,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_corners"
-            >
+            android:background="@drawable/rounded_corners">
 
 
             <EditText
@@ -239,8 +238,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginTop="60dp"
-            android:background="@color/green_accent"
-            android:backgroundTint="@color/green_accent"
+            android:background="@drawable/rounded_corners"
+            app:backgroundTint="@color/green_accent"
             android:text="CALCULATE"
             android:textColor="@color/dark_purple_background"
             android:textSize="18sp" />

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".FinishActivity"
@@ -43,8 +44,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:background="#03989e"
+        android:background="@drawable/rounded_corners"
+        app:backgroundTint="@color/green_accent"
         android:text="@string/finish"
-        android:textColor="#ffffff"
-        android:textSize="25sp" />
+        android:textColor="@color/dark_purple_background"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:padding="24dp"/>
 </LinearLayout>

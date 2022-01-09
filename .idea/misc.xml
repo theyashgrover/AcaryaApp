@@ -6,11 +6,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/drawable_units_tab_selector.xml" value="0.2203125" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/drawable_units_tab_text_color_selector.xml" value="0.2203125" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/drawble_radio_group_tab_background.xml" value="0.2203125" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/ic_action_done.xml" value="0.20555555555555555" />
+        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/ic_alarm2.xml" value="0.2203125" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/ic_bell.xml" value="0.2203125" />
+        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/drawable/rounded_corners.xml" value="0.20185185185185187" />
+        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_alarm_main.xml" value="0.2" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_bmiactivity.xml" value="0.15760869565217392" />
+        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_destination_alarm.xml" value="0.18" />
+        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_exercise.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_finish.xml" value="0.22" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_history.xml" value="0.15760869565217392" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Android/Android_Projects/AcaryaApp/app/src/main/res/layout/fragment_alarm.xml" value="0.1" />
