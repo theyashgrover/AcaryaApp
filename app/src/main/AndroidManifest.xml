@@ -11,7 +11,9 @@
         android:theme="@style/Theme.WorkOut">
         <activity
             android:name=".AboutInfo"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
