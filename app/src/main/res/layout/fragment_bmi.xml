@@ -9,12 +9,14 @@
     android:background="@color/dark_purple_background">
 
 
-
     <RadioGroup
         android:id="@+id/rgUnits"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/drawble_radio_group_tab_background"
         android:orientation="horizontal">
 
@@ -24,13 +26,13 @@
             android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/drawable_units_tab_selector"
+            android:button="@null"
             android:checked="true"
-            android:text="METRIC UNITS"
             android:gravity="center"
+            android:text="METRIC UNITS"
             android:textColor="@drawable/drawable_units_tab_text_color_selector"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:button="@null"/>
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/rbUsUnits"
@@ -38,13 +40,13 @@
             android:layout_height="35dp"
             android:layout_weight="1"
             android:background="@drawable/drawable_units_tab_selector"
+            android:button="@null"
             android:checked="false"
-            android:text="US UNITS"
             android:gravity="center"
+            android:text="US UNITS"
             android:textColor="@drawable/drawable_units_tab_text_color_selector"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:button="@null"/>
+            android:textStyle="bold" />
 
     </RadioGroup>
 
@@ -63,14 +65,15 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
             >
 
 
-            <androidx.appcompat.widget.AppCompatEditText
+            <EditText
                 android:id="@+id/etMetricUnitWeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/light_purple"
+                android:background="#38304C"
                 android:hint="WEIGHT (in kg)"
                 android:inputType="numberDecimal"
                 android:textSize="16sp"
@@ -85,7 +88,9 @@
             android:id="@+id/tilMetricUnitHeight"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginTop="22dp">
 
 
             <androidx.appcompat.widget.AppCompatEditText
@@ -105,7 +110,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone">
+            android:visibility="gone"
+            android:background="@drawable/rounded_corners">
 
 
             <androidx.appcompat.widget.AppCompatEditText
@@ -133,7 +139,9 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners"
+                android:layout_marginTop="22dp">
 
 
                 <androidx.appcompat.widget.AppCompatEditText
@@ -153,7 +161,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners"
+                android:layout_marginTop="22dp">
 
 
                 <androidx.appcompat.widget.AppCompatEditText

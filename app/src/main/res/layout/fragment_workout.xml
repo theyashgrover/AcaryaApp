@@ -12,12 +12,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/architects_daughter"
         android:text="Acarya"
-        android:textColor="@color/white"
-        android:textSize="85sp"
-        android:layout_centerHorizontal="true"/>
+        android:textColor="@color/white_background"
+        android:textSize="85sp" />
 
     <TextView
         android:id="@+id/textView2"
