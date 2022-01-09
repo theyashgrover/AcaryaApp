@@ -24,11 +24,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_history->setCurrentFragment(firstFragment)
                 R.id.nav_workout->setCurrentFragment(secondFragment)
                 R.id.nav_bmi->setCurrentFragment(thirdFragment)
-
             }
             true
         }
-
     }
     private fun setCurrentFragment(fragment: Fragment)=
         supportFragmentManager.beginTransaction().apply {

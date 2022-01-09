@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.TextView
+import android.widget.Toast
 import com.example.workout.databinding.FragmentWorkoutBinding
 import kotlinx.android.synthetic.main.fragment_workout.*
 
@@ -25,8 +26,7 @@ class WorkoutFragment : Fragment() {
         //animation code:
         val ttb = AnimationUtils.loadAnimation(activity , R.anim.ttb)
         val stb = AnimationUtils.loadAnimation(activity , R.anim.stb)
-        val btt = AnimationUtils.loadAnimation(activity , R.anim.btt)
-        binding.textView.startAnimation(ttb)
+        binding.textViewAcarya.startAnimation(ttb)
         binding.textView2.startAnimation(ttb)
         binding.llStart.startAnimation(stb)
         binding.llAlarms.startAnimation(stb)
@@ -41,6 +41,11 @@ class WorkoutFragment : Fragment() {
         binding.llAlarms.setOnClickListener {
             val intent = Intent(activity , AlarmMainActivity::class.java)
             startActivity(intent)
+            Toast.makeText(activity , "Under Development" , Toast.LENGTH_LONG).show()
+        }
+
+        binding.textViewAcarya.setOnClickListener {
+            startActivity(Intent(activity , AboutInfo::class.java))
         }
 
         // Inflate the layout for this fragment

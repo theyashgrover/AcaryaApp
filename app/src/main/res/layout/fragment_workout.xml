@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewAcarya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -23,13 +23,15 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
+        android:layout_below="@id/textViewAcarya"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="6dp"
         android:fontFamily="@font/architects_daughter"
+        android:textAlignment="center"
+        android:maxLines="1"
         android:text="An app made for changing your lifestyle"
         android:textColor="@color/green_accent"
-        android:textSize="20dp" />
+        android:textSize="16dp" />
 
 
 
