@@ -22,10 +22,12 @@ Our objective is to assist people with the importance of health, how they may im
    - ### `Text-to-Speech` 
         The App also Implements the text to speech Functionality for narrating the exercise name.
    - ### `RecyclerView` 
-        The app Implements RecyclerView twice. Once to keep the track of exercises during workout and then to display the workout history of the user. 
+        The app Implements RecyclerView twice. Once to keep the track of exercises during workout and then to display the workout history of the user. ts 
+   - ### `Notification Feature`
+        The app uses the BroadcastReciever class and implements the notification feature for alarm activity. Clicking on the notification redirects user to a destination        activity.
 
 ### Application Link & Future Scope :
-The app is currently testing the feature of DietAlarms. We could improve the UI of the application and Create a new Fragment Dedicated to  Mental Health using REST server.
+The app is currently testing the feature of DietAlarms. We could improve the UI of the application and Create a new Fragment Dedicated to  Mental Health using REST server , with this we will also be able to use Internet in out Application (which as labelled as optional in App Submission Guidelines).
 <br>
 [Google Drive Link for the app](https://drive.google.com/drive/folders/1BAb2ccmF54-Vlozos4RtPvoRWVtL01Ya?usp=sharing)
 <br>
